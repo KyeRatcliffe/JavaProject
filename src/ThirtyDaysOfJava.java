@@ -8,8 +8,6 @@ public class ThirtyDaysOfJava {
         String name = userInput.nextLine();
 
         System.out.println("Thank you: " + name);
-        System.out.println("Hi");
-        System.out.println("Hello");
     }
 
 }
