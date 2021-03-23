@@ -6,6 +6,7 @@ public class ThirtyDaysOfJava {
         Scanner userInput = new Scanner(System.in);
         System.out.println("Please input your name");
         String name = userInput.nextLine();
+        System.out.println("Hi");
 
         System.out.println("Thank you: " + name);
     }
