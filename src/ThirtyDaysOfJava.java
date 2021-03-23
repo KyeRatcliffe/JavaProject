@@ -9,6 +9,7 @@ public class ThirtyDaysOfJava {
 
         System.out.println("Thank you: " + name);
         System.out.println("Hi");
+        System.out.println("Hello");
     }
 
 }
