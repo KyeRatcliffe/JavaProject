@@ -1,15 +1,27 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class ThirtyDaysOfJava {
 
-    public static void main(String[] args) {
-        Scanner userInput = new Scanner(System.in);
-        System.out.println("Please input your name");
-        String name = userInput.nextLine();
-        System.out.println("Hi123");
-        System.out.println("new");
+    public static void main(String[] args) throws FileNotFoundException {
 
-        System.out.println("Thank you: " + name);
+        Scanner in = new Scanner(new File("src\\test.txt"));
+
+        List<String> students = new ArrayList<String>();
+
+        while (in.hasNextLine()) {
+            students.add(in.nextLine());
+        }
+
+        for(int i = 0; i < students.size(); i++) {
+            System.out.println("name: " + students.get(i));
+        }
+
+        in.close();
+
     }
 
 }
