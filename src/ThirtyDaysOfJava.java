@@ -6,15 +6,22 @@ import java.util.*;
 public class ThirtyDaysOfJava {
 
     public static void main(String[] args) {
-
         LinkedList<String> names = new LinkedList<String>();
         names.push("Kye");
-        names.add("John");
-        names.add("sue");
+        names.push("John");
+        names.push("Sue");
 
-        System.out.println(names.remove(1));
-        System.out.println(names.pop());
-        System.out.println(names.removeLast());
+        ListIterator<String> it = names.listIterator();
+        it.next();
+        it.next();
+        it.add("Kye");
+
+
+        names.add(2, "Peter");
+
+        for(String s: names) {
+            System.out.println(s);
+        }
 
     }
 
